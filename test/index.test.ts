@@ -1,6 +1,8 @@
-import { assert, test } from 'vitest'
+import { describe, expect, test } from 'vitest'
 import { a } from '../src'
 
-test('simple', () => {
-  assert.equal(a, 1)
+describe('test', () => {
+  test('one', () => {
+    expect(a).toBe(1)
+  })
 })
