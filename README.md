@@ -1,7 +1,7 @@
 <h1 align="center">starter-ts</h1>
 <p align="center">Build your ts project quickly</p>
 
-## usage
+## Usage
 ```shell
 degit chris-zhu/starter-ts <Project name>
 ```
@@ -39,3 +39,7 @@ When you use this template, try follow the checklist to update your info properl
 - [ ] Clean up the READMEs and remove routes
 
 And, enjoy :)
+
+## License
+
+[MIT](./LICENSE) License © 2022 [chris-zhu](https://github.com/chris-zhu)
