@@ -8,7 +8,7 @@
   "author": "Chris <https://github.com/zyyv>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zyyv/node-start.git"
+    "url": "git+https://github.com/zyyv/starter-ts.git"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -44,9 +44,9 @@
     "typecheck": "tcs --noEmit"
   },
   "bugs": {
-    "url": "https://github.com/zyyv/node-start/issues"
+    "url": "https://github.com/zyyv/starter-ts/issues"
   },
-  "homepage": "https://github.com/zyyv/node-start#readme",
+  "homepage": "https://github.com/zyyv/starter-ts#readme",
   "devDependencies": {
     "@babel/types": "^7.20.2",
     "@chris-zhu/eslint-config": "^1.0.5",
