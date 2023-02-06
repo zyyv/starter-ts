@@ -5,7 +5,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report! If you have a usage question or are unsure if this is really a bug, make sure to:
+        Thanks for taking the time to fill out this bug report! If you have a usage question
+        or are unsure if this is really a bug, make sure to:
 
         - Read the `README.md` of using the package
         - Already used the [Interactive Docs](https://uno.antfu.me)
