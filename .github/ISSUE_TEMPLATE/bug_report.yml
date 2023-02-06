@@ -38,7 +38,7 @@ body:
     id: system-info
     attributes:
       label: System Info
-      placeholder: System, Browsers
+      placeholder: System, Browsers, Framework
     validations:
       required: false
   - type: checkboxes
