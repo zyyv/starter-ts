@@ -5,7 +5,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out this bug report! If you have a usage question or are unsure if this is really a bug, make sure to:
+
+        - Read the `README.md` of using the package
+        - Already used the [Interactive Docs](https://uno.antfu.me)
+        - Ask on [GitHub Discussion](https://github.com/unocss/unocss/discussions) or join our [Discord Chat Server](https://chat.antfu.me)
+
+
   - type: input
     id: version
     attributes:
@@ -36,10 +42,6 @@ body:
       options:
         - label: Read the [Contributing Guidelines](https://github.com/unocss/unocss/blob/main/CONTRIBUTING.md).
           required: true
-        - label: Read the `README.md` of using the package.
-          required: true  
-        - label: Already used the [Interactive Docs](https://uno.antfu.me).
-          required: false
         - label: Check that there isn't [already an issue](https://github.com/unocss/unocss/issues) that reports the same bug to avoid creating a duplicate.
           required: true
         - label: Check that this is a concrete bug. For Q&A open a [GitHub Discussion](https://github.com/unocss/unocss/discussions) or join our [Discord Chat Server](https://chat.antfu.me).
