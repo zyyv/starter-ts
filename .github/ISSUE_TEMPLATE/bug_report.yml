@@ -35,7 +35,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: reproduction
+    id: system-info
     attributes:
       label: System Info
       placeholder: System, Browsers
