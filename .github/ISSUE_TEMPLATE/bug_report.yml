@@ -36,7 +36,7 @@ body:
       options:
         - label: Read the [Contributing Guidelines](https://github.com/unocss/unocss/blob/main/CONTRIBUTING.md).
           required: true
-        - label: Already used the [interactive docs](https://uno.antfu.me/).
+        - label: Already used the [Interactive Docs](https://uno.antfu.me).
           required: true
         - label: Check that there isn't [already an issue](https://github.com/unocss/unocss/issues) that reports the same bug to avoid creating a duplicate.
           required: true
