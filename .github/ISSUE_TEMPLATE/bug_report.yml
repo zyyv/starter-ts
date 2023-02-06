@@ -12,7 +12,6 @@ body:
         - Already used the [Interactive Docs](https://uno.antfu.me)
         - Ask on [GitHub Discussion](https://github.com/unocss/unocss/discussions) or join our [Discord Chat Server](https://chat.antfu.me)
 
-
   - type: input
     id: version
     attributes:
@@ -35,6 +34,13 @@ body:
       placeholder: Reproduction
     validations:
       required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: System Info
+      placeholder: System, Browsers
+    validations:
+      required: false
   - type: checkboxes
     id: checkboxes
     attributes:
