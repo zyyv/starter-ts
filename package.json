@@ -1,28 +1,30 @@
 {
-  "name": "name",
+  "name": "[name]",
+  "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@7.14.0",
   "description": "[description]",
-  "keywords": [],
-  "license": "MIT",
   "author": "Chris <https://github.com/zyyv>",
+  "license": "MIT",
+  "homepage": "https://github.com/zyyv/[name]#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zyyv/starter-ts.git"
+    "url": "git+https://github.com/zyyv/[name].git"
+  },
+  "bugs": {
+    "url": "https://github.com/zyyv/[name]/issues"
+  },
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
-    }
-  },
-  "files": [
-    "dist"
-  ],
   "typesVersions": {
     "*": {
       "*": [
@@ -31,9 +33,11 @@
       ]
     }
   },
-  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "rimraf dist && unbuild",
+    "build": "unbuild",
     "dev": "unbuild --stub",
     "prepublishOnly": "pnpm run build",
     "release": "bumpp --commit --push --tag && pnpm publish",
@@ -43,21 +47,16 @@
     "test:update": "vitest -u",
     "typecheck": "tcs --noEmit"
   },
-  "bugs": {
-    "url": "https://github.com/zyyv/starter-ts/issues"
-  },
-  "homepage": "https://github.com/zyyv/starter-ts#readme",
   "devDependencies": {
-    "@babel/types": "^7.20.2",
-    "@chris-zhu/eslint-config": "^1.0.5",
-    "@types/node": "^18.11.9",
+    "@antfu/eslint-config": "^0.35.2",
+    "@babel/types": "^7.21.0",
+    "@types/node": "^18.14.0",
     "bumpp": "^8.2.1",
-    "eslint": "^8.27.0",
+    "eslint": "^8.34.0",
     "esno": "^0.16.3",
-    "rimraf": "^3.0.2",
-    "typescript": "^4.8.4",
-    "unbuild": "^0.9.4",
-    "vite": "^3.2.3",
-    "vitest": "^0.25.1"
+    "typescript": "^4.9.5",
+    "unbuild": "^1.1.2",
+    "vite": "^4.1.4",
+    "vitest": "^0.28.5"
   }
 }

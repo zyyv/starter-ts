@@ -3,7 +3,7 @@
 
 ## Usage
 ```shell
-degit chris-zhu/starter-ts <Project name>
+degit zyyv/starter-ts <Project name>
 ```
 
 ```shell
@@ -26,20 +26,18 @@ pnpm dev
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/chris-zhu/starter-ts/generate).
+[Create a repo from this template on GitHub](https://github.com/zyyv/starter-ts/generate).
 
 ## Checklist
 
 When you use this template, try follow the checklist to update your info properly
 
 - [ ] Update the package.json
+- [ ] ReplaceAll `[name]` to your project name
 - [ ] Change the author name in `LICENSE`
-- [ ] Change the favicon in `public`
-- [ ] Remove the `.github` folder which contains the funding info
-- [ ] Clean up the READMEs and remove routes
 
 And, enjoy :)
 
 ## License
 
-[MIT](./LICENSE) License © 2022 [chris-zhu](https://github.com/chris-zhu)
+[MIT](./LICENSE) License © 2022 [zyyv](https://github.com/zyyv)
