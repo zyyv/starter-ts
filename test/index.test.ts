@@ -1,8 +1,8 @@
-import { describe, expect, test } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { a } from '../src'
 
 describe('test', () => {
-  test('one', () => {
+  it('one', () => {
     expect(a).toBe(1)
   })
 })

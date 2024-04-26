@@ -11,7 +11,7 @@ code <Project name>
 ```
 
 Then
-    
+
 ```shell
 pnpm i
 ```
