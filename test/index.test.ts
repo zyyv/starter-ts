@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { a } from '../src'
+import { a } from '../packages/core/src'
 
 describe('test', () => {
   it('one', () => {

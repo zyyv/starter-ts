@@ -1,0 +1,42 @@
+{
+  "name": "name",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "[description]",
+  "author": "Chris <https://github.com/zyyv>",
+  "license": "MIT",
+  "homepage": "https://github.com/zyyv/[name]#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyyv/[name].git"
+  },
+  "bugs": {
+    "url": "https://github.com/zyyv/[name]/issues"
+  },
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild"
+  }
+}

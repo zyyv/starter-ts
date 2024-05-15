@@ -1,23 +1,26 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": ["esnext"],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
+    "paths": {
+      "name": ["./packages/core/src/index.ts"]
+    },
     "resolveJsonModule": true,
-    "types": [
-      "node"
-    ],
     "strict": true,
+    "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "esModuleInterop": true
   },
   "exclude": [
     "**/dist/**",
     "**/node_modules/**",
-    "eslint.config.js",
-    "**/public/**",
-    "**/test/dts/**"
+    "eslint.config.js"
   ]
 }

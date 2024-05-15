@@ -1,47 +1,16 @@
 {
-  "name": "name",
+  "name": "@name/monorepo",
   "type": "module",
   "version": "0.0.0",
+  "private": true,
   "packageManager": "pnpm@9.1.0",
-  "description": "[description]",
-  "author": "Chris <https://github.com/zyyv>",
   "license": "MIT",
-  "homepage": "https://github.com/zyyv/[name]#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zyyv/[name].git"
-  },
-  "bugs": {
-    "url": "https://github.com/zyyv/[name]/issues"
-  },
-  "keywords": [],
-  "sideEffects": false,
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs"
-    }
-  },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./dist/index.d.ts"
-      ]
-    }
-  },
-  "files": [
-    "dist"
-  ],
   "scripts": {
-    "build": "unbuild",
-    "dev": "unbuild --stub",
+    "build": "pnpm -r -F=./packages/* run build",
+    "stub": "pnpm -r -F=./packages/* --parallel run stub",
+    "dev": "pnpm stub",
+    "release": "pnpm lint:fix && bumpp -r",
     "prepublishOnly": "pnpm run build",
-    "release": "bumpp --commit --push --tag && pnpm publish",
-    "start": "esno src/index.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest",
@@ -55,9 +24,19 @@
     "bumpp": "^9.4.1",
     "eslint": "^9.2.0",
     "esno": "^4.7.0",
+    "lint-staged": "^15.2.2",
+    "simple-git-hooks": "^2.11.1",
     "typescript": "^5.4.5",
     "unbuild": "^2.0.0",
     "vite": "^5.2.11",
     "vitest": "^1.6.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue,md}": [
+      "eslint --cache --fix"
+    ]
   }
 }
